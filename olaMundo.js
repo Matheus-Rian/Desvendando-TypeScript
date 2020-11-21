@@ -40,4 +40,9 @@ var add = function (v1, v2, v3) {
     return v1 + v2;
 };
 console.log("soma: " + add(1, 2, 3));
+var qualquerTipo = 'Any aceita qualquer tipo. Por exemplo: number, boolean e etc...';
+var stringLength = qualquerTipo.length;
+var stringUpperCase = qualquerTipo.toUpperCase();
+console.log(stringLength);
+console.log(stringUpperCase);
 //# sourceMappingURL=olaMundo.js.map

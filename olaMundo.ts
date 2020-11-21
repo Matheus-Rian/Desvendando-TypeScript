@@ -46,3 +46,9 @@ const add = (v1: number, v2: number, v3?: number): number => {
 console.log(`soma: ${add(1, 2, 3)}`)
 
 let qualquerTipo: any = 'Any aceita qualquer tipo. Por exemplo: number, boolean e etc...'
+
+let stringLength: number = (<string> qualquerTipo).length;
+let stringUpperCase: string = (<string> qualquerTipo).toUpperCase();
+
+console.log(stringLength);
+console.log(stringUpperCase);
