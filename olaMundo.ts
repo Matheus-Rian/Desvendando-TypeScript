@@ -48,7 +48,15 @@ console.log(`soma: ${add(1, 2, 3)}`)
 let qualquerTipo: any = 'Any aceita qualquer tipo. Por exemplo: number, boolean e etc...'
 
 let stringLength: number = (<string> qualquerTipo).length;
-let stringUpperCase: string = (<string> qualquerTipo).toUpperCase();
+let stringUpperCase: string = (qualquerTipo as string).toUpperCase();
 
 console.log(stringLength);
 console.log(stringUpperCase);
+
+const add2 = (desc: string, ...valores: number[]): void => {
+    let sum: number = 0;
+    for (let i = 0; i < valores.length; i++) { sum += valores[i] }
+    console.log(`${desc} ${sum}`)
+}
+
+add2("Soma é:", 1, 2, 3, 4)

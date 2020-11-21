@@ -45,4 +45,16 @@ var stringLength = qualquerTipo.length;
 var stringUpperCase = qualquerTipo.toUpperCase();
 console.log(stringLength);
 console.log(stringUpperCase);
+var add2 = function (desc) {
+    var valores = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        valores[_i - 1] = arguments[_i];
+    }
+    var sum = 0;
+    for (var i = 0; i < valores.length; i++) {
+        sum += valores[i];
+    }
+    console.log(desc + " " + sum);
+};
+add2("Soma é:", 1, 2, 3, 4);
 //# sourceMappingURL=olaMundo.js.map
